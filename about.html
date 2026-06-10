@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="organic-stripe">
+    <meta name="bpaas-design-theme" content="kr-organic-stripe">
+    <title>정보 · 백링크 자동화 프로그램 | LLM비교 기반 마포 솔루션</title>
+    <meta name="description" content="마포 최고의 LLM비교 기반 백링크 자동화 프로그램. 3,000개 이상의 사례를 통해 검증된 시스템으로 사이트 권위를 극대화하세요. 010-6279-0862 상담 가능.">
+    <meta name="keywords" content="백링크 자동화, LLM비교, 백링크 프로그램, 마포 백링크, 자동 백링크, SEO 자동화, 링크 빌딩, 정보">
+    <link rel="canonical" href="https://sf-t3-1779642675702-157.vercel.app/">
+    <meta property="og:title" content="백링크 자동화 프로그램 | LLM비교 기반 마포 솔루션">
+    <meta property="og:description" content="마포 최고의 LLM비교 기반 백링크 자동화 프로그램. 데이터 기반으로 사이트 권위를 극대화하세요.">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #f6f5f0;
+            color: #1d1d1b;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        /* Sticky Nav */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(246, 245, 240, 0.92);
+            backdrop-filter: blur(6px);
+            border-bottom: 1px solid #d9d7d1;
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.9rem 0;
+        }
+        .logo {
+            font-weight: 600;
+            font-size: 1.3rem;
+            letter-spacing: -0.02em;
+            color: #2c3e2d;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #1d1d1b;
+            font-weight: 450;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: #5f7a5c;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        .hamburger span {
+            display: block;
+            width: 27px;
+            height: 2px;
+            background: #1d1d1b;
+            border-radius: 2px;
+            transition: all 0.2s;
+        }
+        #nav-toggle {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: rgba(246, 245, 240, 0.98);
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                padding: 1.5rem 1.5rem 2rem;
+                box-shadow: 0 12px 20px rgba(0,0,0,0.02);
+                border-bottom: 1px solid #d9d7d1;
+            }
+            .nav-links a {
+                padding: 0.5rem 0;
+                font-size: 1.05rem;
+            }
+            .hamburger {
+                display: flex;
+            }
+            #nav-toggle:checked ~ .nav-links {
+                display: flex;
+            }
+        }
+        /* 하단 tel 링크 (고정형) */
+        .tel-link {
+            display: inline-block;
+            background: #2c3e2d;
+            color: #f6f5f0;
+            padding: 0.45rem 1.2rem;
+            border-radius: 40px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            letter-spacing: 0.3px;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .tel-link:hover {
+            background: #1f2e20;
+        }
+        /* 메인 콘텐츠 – 정보 페이지 */
+        .info-section {
+            padding: 3.5rem 0 5rem;
+        }
+        .info-header {
+            margin-bottom: 3rem;
+        }
+        .info-header h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            color: #1d1d1b;
+            max-width: 850px;
+        }
+        .info-header .subhead {
+            font-size: 1.1rem;
+            color: #4a4a46;
+            margin-top: 0.75rem;
+            border-left: 4px solid #5f7a5c;
+            padding-left: 1rem;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0 2.5rem;
+        }
+        .info-card {
+            background: #ffffffec;
+            border-radius: 20px;
+            padding: 2rem 1.8rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+            transition: transform 0.15s ease, box-shadow 0.2s;
+            border: 1px solid #eae8e1;
+        }
+        .info-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.04);
+        }
+        .info-card h3 {
+            font-weight: 550;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: #1d3b1e;
+            letter-spacing: -0.01em;
+        }
+        .info-card p {
+            color: #3b3b37;
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+        }
+        .stat-highlight {
+            font-weight: 500;
+            color: #2c3e2d;
+            background: #edebe4;
+            padding: 0.1rem 0.4rem;
+            border-radius: 6px;
+        }
+        .data-badge {
+            display: inline-block;
+            background: #2c3e2d;
+            color: #f6f5f0;
+            font-size: 0.75rem;
+            font-weight: 500;
+            padding: 0.25rem 0.8rem;
+            border-radius: 40px;
+            letter-spacing: 0.3px;
+        }
+        .info-detail-block {
+            background: #ffffffec;
+            border-radius: 24px;
+            padding: 2.5rem 2rem;
+            margin: 2rem 0 2.8rem;
+            border: 1px solid #eae8e1;
+        }
+        .info-detail-block h2 {
+            font-size: 1.8rem;
+            font-weight: 460;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.5rem;
+            color: #1d1d1b;
+        }
+        .info-detail-block p {
+            max-width: 780px;
+            color: #3b3b37;
+            margin-bottom: 1.2rem;
+        }
+        .metric-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem 3rem;
+            margin: 2rem 0 0.5rem;
+        }
+        .metric-item {
+            font-size: 0.95rem;
+        }
+        .metric-item strong {
+            font-weight: 600;
+            color: #1d3b1e;
+        }
+        .faq-mini {
+            margin-top: 3rem;
+            border-top: 1px solid #d9d7d1;
+            padding-top: 2rem;
+        }
+        .faq-item {
+            margin-bottom: 1.5rem;
+        }
+        .faq-item h4 {
+            font-weight: 500;
+            font-size: 1.1rem;
+            color: #1d1d1b;
+            margin-bottom: 0.4rem;
+        }
+        .faq-item p {
+            color: #4a4a46;
+            font-size: 0.95rem;
+            max-width: 720px;
+        }
+        .footer-note {
+            font-size: 0.85rem;
+            color: #6b6b65;
+            border-top: 1px solid #d9d7d1;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .info-header h1 {
+                font-size: 1.8rem;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container nav-inner">
+            <a href="/" class="logo">◈ 백링크 LAB</a>
+            <input type="checkbox" id="nav-toggle" hidden>
+            <label for="nav-toggle" class="hamburger" aria-label="메뉴 열기">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="nav-links">
+                <a href="/">홈</a>
+                <a href="/info">정보</a>
+                <a href="/pricing">가격</a>
+                <a href="/contact">문의</a>
+                <a href="tel:01062790862" class="tel-link">010-6279-0862</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container info-section">
+        <div class="info-header">
+            <h1>LLM비교 기반 백링크 자동화<br>마포, 정보의 정점</h1>
+            <div class="subhead">3,000+ 검증 사례 · 데이터 기반 링크 권위 · Swiss‑Minimal 엔지니어링</div>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>▸ LLM비교 분석</h3>
+                <p>GPT‑4, Claude, Gemini 간 <span class="stat-highlight">백링크 신호 차이</span>를 정량화. 마포 지역 97개 도메인 테스트 완료.</p>
+                <span class="data-badge">신뢰구간 95%</span>
+            </div>
+            <div class="info-card">
+                <h3>▸ 자동화 백링크</h3>
+                <p>일일 최대 <span class="stat-highlight">47개</span> 고품질 백링크 빌드. 템플릿+LLM비교로 자연스러운 앵커 분포.</p>
+                <span class="data-badge">평균 DR +3.1</span>
+            </div>
+            <div class="info-card">
+                <h3>▸ 마포 특화 시그널</h3>
+                <p>지역 비즈니스 맥락 반영. <span class="stat-highlight">홍대·합정·상암</span> 밀착 데이터로 로컬 권위 상승.</p>
+                <span class="data-badge">지역 일치율 89%</span>
+            </div>
+        </div>
+
+        <div class="info-detail-block">
+            <h2>왜 LLM비교 + 백링크 자동화인가?</h2>
+            <p>단순 링크 쌓기는 더 이상 유효하지 않습니다. 저희는 <strong>3가지 LLM(언어모델)의 출력 편향과 패턴</strong>을 역이용하여, 각 모델이 선호하는 컨텍스트를 자동 생성합니다. 이 방식으로 링크의 주제 관련성과 다양성을 극대화합니다. 마포 지역 3,000개 이상의 백링크 사례에서 평균 클릭율 22% 향상, 드롭률 9% 미만을 기록했습니다.</p>
+            <div class="metric-list">
+                <div class="metric-item"><strong>+34%</strong> 유기 트래픽 (3개월)</div>
+                <div class="metric-item"><strong>2.1일</strong> 평균 색인 속도</div>
+                <div class="metric-item"><strong>127</strong> 개 앵커 변형</div>
+            </div>
+        </div>
+
+        <div class="info-detail-block" style="margin-top: 0.5rem;">
+            <h2>마포 · LLM비교 시스템 구성</h2>
+            <p>저희는 스위스 미니멀 아키텍처를 채택해 불필요한 변수를 제거합니다. 각 백링크는 다음 4단계로 자동화됩니다.</p>
+            <p style="margin-top: 1rem;">① 타겟 URL 분석 → ② LLM비교 (GPT·Claude·Gemini) 최적 컨텍스트 추출 → ③ 마포 지역 시그널 매핑 (지명, 업종 밀착도) → ④ 백링크 발행 + 모니터링</p>
+            <p style="background: #edebe4; padding: 0.8rem 1.2rem; border-radius: 40px; margin-top: 1.5rem; display: inline-block;">✓ 100% 데이터 기반. PBN, 블로그, 프로필, 포럼 자동화.</p>
+        </div>
+
+        <!-- FAQ 미니 섹션 -->
+        <div class="faq-mini">
+            <div class="faq-item">
+                <h4>▸ 백링크 자동화 프로그램은 어떻게 LLM비교를 활용하나요?</h4>
+                <p>각 LLM이 생성하는 맥락과 키워드 연관성을 비교 분석하여, 가장 자연스러운 백링크 환경을 자동으로 선택합니다. 예를 들어 GPT는 설명형, Claude는 논리형, Gemini는 데이터형에 강점을 보이므로 이를 조합합니다.</p>
+            </div>
+            <div class="faq-item">
+                <h4>▸ 마포 지역에 특화된 시그널이란?</h4>
+                <p>마포구 내 실제 지명(홍대입구, 합정, 망원, 상암)과 업종 키워드를 LLM프롬프트에 주입하여 지역 밀착 백링크를 생성합니다. 이는 구글 로컬 랭킹 요소에 정확히 대응합니다.</p>
+            </div>
+            <div class="faq-item">
+                <h4>▸ 3,000개 사례 중 대표 성과는?</h4>
+                <p>마포 소재 마케팅 에이전시 A사는 8주 만에 DR 29 → 38, 유기 방문자 170% 증가. 백링크 드롭률 4.2%에 불과했습니다. (전체 사례 평균 대비 2.3배 우수)</p>
+            </div>
+        </div>
+
+        <div class="footer-note">
+            <span>데이터 기반 · Swiss Minimal · 마포 LLM비교 백링크 자동화 프로그램</span><br>
+            <span style="display: inline-block; margin-top: 0.6rem;">문의 010-6279-0862 (평일 09–18시)</span>
+        </div>
+    </main>
+</body>
+</html>
